@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.navbar nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+}
+
+/* Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+.hero p {
+  margin-bottom: 1.5rem;
+}
+.btn {
+  background: #c96;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #a75;
+}
+
+/* Menu */
+.menu {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.menu h2 {
+  margin-bottom: 2rem;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+.menu-item {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  animation: fadeIn 1s ease forwards;
+}
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+.menu-item span {
+  color: #c96;
+  font-weight: bold;
+}
+
+/* About */
+.about {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fafafa;
+}
+
+/* Contact */
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+.contact input, .contact textarea {
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.contact button {
+  padding: 0.8rem;
+  background: #c96;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.map-placeholder {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .navbar nav {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  .navbar nav.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
