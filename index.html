@@ -1,168 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Café Demo — Premium</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <meta name="description" content="Cozy café serving specialty coffee, fresh pastries, and warm vibes." />
-</head>
-<body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="nav-inner">
-      <a class="brand" href="#home">Café Demo</a>
-      <nav id="nav-links">
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+<section id="menu" class="menu">
+  <div class="container">
+    <h2>Our Menu</h2>
+    <p class="subtitle">Freshly brewed coffee and baked treats</p>
+
+    <div class="grid">
+      <!-- Card 1 -->
+      <article class="card reveal">
+        <img src="https://source.unsplash.com/1200x800/?espresso,coffee" alt="Espresso">
+        <div class="card-body">
+          <h3>Espresso</h3>
+          <p>Short and intense, pulled to perfection.</p>
+          <span class="price">$2.50</span>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card reveal">
+        <img src="https://source.unsplash.com/1200x800/?cappuccino,latte" alt="Cappuccino">
+        <div class="card-body">
+          <h3>Cappuccino</h3>
+          <p>Silky foam over a bold espresso base.</p>
+          <span class="price">$3.50</span>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card reveal">
+        <img src="https://source.unsplash.com/1200x800/?croissant,pastry" alt="Butter Croissant">
+        <div class="card-body">
+          <h3>Butter Croissant</h3>
+          <p>Layers of flaky goodness, baked daily.</p>
+          <span class="price">$3.00</span>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card reveal">
+        <img src="https://source.unsplash.com/1200x800/?sandwich,food" alt="Club Sandwich">
+        <div class="card-body">
+          <h3>Club Sandwich</h3>
+          <p>Toasted, stacked, and satisfying.</p>
+          <span class="price">$5.50</span>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card reveal">
+        <img src="https://source.unsplash.com/1200x800/?cheesecake,dessert" alt="New York Cheesecake">
+        <div class="card-body">
+          <h3>New York Cheesecake</h3>
+          <p>Rich, creamy, with a buttery crust.</p>
+          <span class="price">$4.50</span>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="card reveal">
+        <img src="https://source.unsplash.com/1200x800/?matcha,latte" alt="Matcha Latte">
+        <div class="card-body">
+          <h3>Matcha Latte</h3>
+          <p>Earthy, smooth, lightly sweetened.</p>
+          <span class="price">$3.80</span>
+        </div>
+      </article>
     </div>
-  </header>
-
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1 class="reveal-up">Fresh Coffee, Warm Vibes</h1>
-      <p class="reveal-up delay-1">Handcrafted espresso, flaky pastries, and a place to slow down.</p>
-      <div class="cta-row reveal-up delay-2">
-        <a href="#menu" class="btn">View Menu</a>
-        <a href="#contact" class="btn btn-outline">Reserve a Table</a>
-      </div>
-      <div class="scroll-indicator">▼</div>
-    </div>
-  </section>
-
-  <!-- Menu -->
-  <section id="menu" class="section">
-    <div class="container">
-      <h2 class="section-title">Our Menu</h2>
-      <p class="section-subtitle">Favorites from our bar & bakery</p>
-
-      <div class="grid">
-        <!-- Card 1 -->
-        <article class="card reveal">
-          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop" alt="Espresso">
-          <div class="card-body">
-            <h3>Espresso</h3>
-            <p>Short and intense, pulled to perfection.</p>
-            <span class="price">$2.50</span>
-          </div>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="card reveal">
-          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1200&auto=format&fit=crop" alt="Cappuccino">
-          <div class="card-body">
-            <h3>Cappuccino</h3>
-            <p>Silky foam over a bold espresso base.</p>
-            <span class="price">$3.50</span>
-          </div>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="card reveal">
-          <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=1200&auto=format&fit=crop" alt="Croissant">
-          <div class="card-body">
-            <h3>Butter Croissant</h3>
-            <p>Layers of flaky goodness, baked daily.</p>
-            <span class="price">$3.00</span>
-          </div>
-        </article>
-
-        <!-- Card 4 -->
-        <article class="card reveal">
-          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop" alt="Sandwich">
-          <div class="card-body">
-            <h3>Club Sandwich</h3>
-            <p>Toasted, stacked, and satisfying.</p>
-            <span class="price">$5.50</span>
-          </div>
-        </article>
-
-        <!-- Card 5 -->
-        <article class="card reveal">
-          <img src="https://images.unsplash.com/photo-1583217740896-a83b6a12f36e?q=80&w=1200&auto=format&fit=crop" alt="Cheesecake">
-          <div class="card-body">
-            <h3>New York Cheesecake</h3>
-            <p>Rich, creamy, with a buttery crust.</p>
-            <span class="price">$4.50</span>
-          </div>
-        </article>
-
-        <!-- Card 6 -->
-        <article class="card reveal">
-          <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=1200&auto=format&fit=crop" alt="Matcha Latte">
-          <div class="card-body">
-            <h3>Matcha Latte</h3>
-            <p>Earthy, smooth, lightly sweetened.</p>
-            <span class="price">$3.80</span>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section alt">
-    <div class="container split">
-      <div class="split-text reveal-left">
-        <h2>Our Story</h2>
-        <p>We started with one idea: great coffee should feel like home. From carefully sourced beans to pastries made at dawn, everything we serve is crafted with intention.</p>
-        <p>Whether you’re catching up with friends or recharging solo, our space is designed for comfort, conversation, and the little moments that matter.</p>
-        <a href="#contact" class="btn">Visit Us</a>
-      </div>
-      <div class="split-media reveal-right">
-        <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?q=80&w=1200&auto=format&fit=crop" alt="Café interior">
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container contact-grid">
-      <div class="contact-card reveal">
-        <h2>Contact Us</h2>
-        <p><strong>Phone:</strong> +213 555 123 456</p>
-        <p><strong>Email:</strong> hello@cafedemo.com</p>
-        <p><strong>Address:</strong> 123 Main Street, Algiers, Algeria</p>
-
-        <form class="contact-form" onsubmit="return validateForm(event)">
-          <input type="text" id="name" placeholder="Your Name" required>
-          <input type="email" id="email" placeholder="Your Email" required>
-          <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn">Send Message</button>
-          <p id="form-status" class="form-status" aria-live="polite"></p>
-        </form>
-      </div>
-
-      <div class="map-card reveal">
-        <iframe
-          title="Map"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Algiers&output=embed">
-        </iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© 2025 Café Demo — All rights reserved.</p>
-      <div class="socials">
-        <a href="#" aria-label="Instagram">IG</a>
-        <a href="#" aria-label="Facebook">FB</a>
-        <a href="#" aria-label="X">X</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  </div>
+</section>
