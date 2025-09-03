@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Store</title>
+  <style>
+    body {margin:0; font-family:Arial, sans-serif; line-height:1.6; color:#333;}
+    header {background:#f57c00; color:#fff; padding:40px 20px; text-align:center;}
+    header h1 {margin:0; font-size:2.5em;}
+    nav {background:#333; color:#fff; display:flex; justify-content:center; padding:10px;}
+    nav a {color:#fff; margin:0 15px; text-decoration:none; font-weight:bold;}
+    nav a:hover {color:#f57c00;}
+    section {padding:40px 20px; max-width:1000px; margin:auto;}
+    .menu {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px;}
+    .item {border:1px solid #ddd; padding:15px; border-radius:8px; text-align:center;}
+    .item img {width:100%; height:200px; object-fit:cover; border-radius:6px;}
+    footer {background:#333; color:#fff; text-align:center; padding:20px;}
+    .contact iframe {width:100%; height:300px; border:0;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Local Store</h1>
+    <p>Your favorite place for quality products</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="menu">
+    <h2>Our Catalog</h2>
+    <div class="menu">
+      <div class="item">
+        <img src="https://source.unsplash.com/400x300/?coffee" alt="Product">
+        <h3>Fresh Coffee</h3>
+        <p>$3.50</p>
+      </div>
+      <div class="item">
+        <img src="https://source.unsplash.com/400x300/?cake" alt="Product">
+        <h3>Chocolate Cake</h3>
+        <p>$5.00</p>
+      </div>
+      <div class="item">
+        <img src="https://source.unsplash.com/400x300/?sandwich" alt="Product">
+        <h3>Special Sandwich</h3>
+        <p>$4.00</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      At Local Store, we believe in serving fresh, high-quality products that bring joy to our community. 
+      Whether you’re stopping by for a quick coffee or enjoying our handmade treats, we’re here to make your day better.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> +213 555 123 456</p>
+    <p><strong>Email:</strong> info@localstore.com</p>
+    <p><strong>Address:</strong> 123 Main Street, Algiers, Algeria</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.1314424949726!2d3.04197!3d36.7538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fadf5b6d2cd2b%3A0x40d2b92af59b0!2sAlgiers!5e0!3m2!1sen!2sdz!4v0000000000" 
+      allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Local Store. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
